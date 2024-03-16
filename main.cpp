@@ -8,10 +8,10 @@ int main(int argc, char* argv[]){
   string option (argv[1]);
   if (option == "add"){
     float ans = add(argc,argv);
-    cout << ans;
+    cout << ans << endl;
   } else if (option == "subtract"){
     float ans = take_away(argc,argv);
-    cout << ans;
+    cout << ans << endl;
   } 
 
   
