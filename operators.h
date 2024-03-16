@@ -26,7 +26,7 @@ float take_away(int argc,char* argv[]){
   }
   float tmp = conv_argv[2] - conv_argv[3];
   for (int i = 4;i < argc;i++){
-    tmp = tmp + conv_argv[4];
+    tmp = tmp - conv_argv[i];
   }
   return tmp;
 }
