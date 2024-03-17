@@ -12,6 +12,12 @@ int main(int argc, char* argv[]){
   } else if (option == "subtract"){
     float ans = take_away(argc,argv);
     cout << ans << endl;
+  } else if (option == "divide"){
+    float ans = divide(argc,argv);
+    cout << ans;
+  } else if (option == "multiply"){
+    float ans = multiply(argc,argv);
+    cout << ans;
   } 
 
   

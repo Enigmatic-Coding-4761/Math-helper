@@ -31,5 +31,30 @@ float take_away(int argc,char* argv[]){
   return tmp;
 }
 
+float divide(int argc, char* argv[]){
+  float conv_argv[argc];
+  for (int i = 2; i < argc; i++){
+    float tmp = std::stof(argv[i]);
+    conv_argv[i] = tmp;
+  }
+  float tmp = conv_argv[2] / conv_argv[3];
+  for (int i = 4; i < argc; i++){
+    tmp = tmp / conv_argv[i];
+  }
+  return tmp;
+}
+float multiply(int argc, char* argv[]){
+  float conv_argv[argc];
+  for (int i = 2; i < argc; i++){
+    float tmp = std::stof(argv[i]);
+    conv_argv[i] = tmp;
+  }
+  float tmp =  conv_argv[2] * conv_argv[3];
+ for (int i = 4; i < argc;i++){
+  tmp *= conv_argv[i];
+  }
+  return tmp;
+
+}
 
 #endif
