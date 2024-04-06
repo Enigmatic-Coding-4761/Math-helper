@@ -57,4 +57,13 @@ float multiply(int argc, char* argv[]){
 
 }
 
+float std_form_to_num(int argc, char* argv[]){
+  float num = std::stof(argv[2]);
+  float ammout_of_powers = std::stof(argv[3]);
+  for (int i = 0; i < ammout_of_powers; i++){
+    num *= 10;
+  }
+  return num;
+}
+
 #endif
