@@ -60,8 +60,15 @@ float multiply(int argc, char* argv[]){
 float std_form_to_num(int argc, char* argv[]){
   float num = std::stof(argv[2]);
   float ammout_of_powers = std::stof(argv[3]);
-  for (int i = 0; i < ammout_of_powers; i++){
-    num *= 10;
+  std::cout << ammout_of_powers << std::endl;
+  if (ammout_of_powers > 0){
+    for (int i = 0; i < ammout_of_powers; i++){
+      num *= 10;
+    }
+  } else if (ammout_of_powers < 0){
+    for (int i = ammout_of_powers; i < 0; i++){
+      num /= 10;
+    }
   }
   return num;
 }
