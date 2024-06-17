@@ -72,5 +72,22 @@ float std_form_to_num(int argc, char* argv[]){
   }
   return num;
 }
+void numtostd(double number, int power){
+  double num = number;
+  if (num >= 1 && num < 10){
+    std::cout << num << " X10^" << power; 
 
+    return;
+  }
+  if (num >= 10 ){
+    power = power + 1;
+    num /= 10;
+    numtostd(num, power);
+  }
+  if (num < 1){
+    power--;
+    num *= 10;
+    numtostd(num, power);
+  }
+}
 #endif

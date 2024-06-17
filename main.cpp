@@ -21,6 +21,8 @@ int main(int argc, char* argv[]){
   } else if (option == "stdtonum"){
     float ans = std_form_to_num(argc,argv);
     cout << ans;
+  }else if (option == "numtostd"){
+    numtostd(std::stof(argv[2]), 0);
   }
 
   
